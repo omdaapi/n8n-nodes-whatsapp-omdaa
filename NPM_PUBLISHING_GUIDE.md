@@ -123,7 +123,7 @@ dist/
 
 ```json
 {
-  "name": "@omdaa/n8n-nodes-whatsapp-omdaa"
+  "name": "@omdaapi/n8n-nodes-whatsapp-omdaa"
 }
 ```
 
@@ -156,7 +156,7 @@ npm publish --dry-run --access public
 npm publish --access public
 ```
 
-**ملاحظة:** نستخدم `--access public` لأن الحزمة scoped (`@omdaa/`) تكون private بشكل افتراضي.
+**ملاحظة:** نستخدم `--access public` لأن الحزمة scoped (`@omdaapi/`) تكون private بشكل افتراضي.
 
 ستحتاج إلى إدخال 2FA code مرة أخرى.
 
@@ -164,7 +164,7 @@ npm publish --access public
 
 بعد النشر الناجح:
 
-1. افتح المتصفح: https://www.npmjs.com/package/@omdaa/n8n-nodes-whatsapp-omdaa
+1. افتح المتصفح: https://www.npmjs.com/package/@omdaapi/n8n-nodes-whatsapp-omdaa
 2. تحقق من ظهور الحزمة
 3. تحقق من README يظهر بشكل صحيح
 
@@ -182,11 +182,11 @@ npm install n8n -g
 
 ```bash
 # الطريقة 1: من npm
-npm install @omdaa/n8n-nodes-whatsapp-omdaa -g
+npm install @omdaapi/n8n-nodes-whatsapp-omdaa -g
 
 # أو الطريقة 2: في مجلد n8n custom nodes
 cd ~/.n8n/nodes
-npm install @omdaa/n8n-nodes-whatsapp-omdaa
+npm install @omdaapi/n8n-nodes-whatsapp-omdaa
 ```
 
 ### 4.3 تشغيل n8n
@@ -329,9 +329,9 @@ npm install -g typescript
 
 ### الصلاحيات المطلوبة
 
-لنشر حزم scoped (`@omdaa/`):
-1. يجب أن تكون عضواً في منظمة `omdaa` على npm، أو
-2. يجب أن يكون اسم المستخدم الخاص بك هو `omdaa`
+لنشر حزم scoped (`@omdaapi/`):
+1. يجب أن تكون عضواً في منظمة `omdaapi` على npm، أو
+2. يجب أن يكون اسم المستخدم الخاص بك هو `omdaapi`
 
 إذا لم يكن لديك المنظمة:
 
@@ -351,8 +351,8 @@ npm install -g typescript
 ### الإحصائيات والتحليلات
 
 بعد النشر، يمكنك متابعة:
-- عدد التحميلات: https://www.npmjs.com/package/@omdaa/n8n-nodes-whatsapp-omdaa
-- npm trends: https://npmtrends.com/@omdaa/n8n-nodes-whatsapp-omdaa
+- عدد التحميلات: https://www.npmjs.com/package/@omdaapi/n8n-nodes-whatsapp-omdaa
+- npm trends: https://npmtrends.com/@omdaapi/n8n-nodes-whatsapp-omdaa
 
 ---
 
@@ -364,8 +364,8 @@ npm install -g typescript
 
 1. ✅ أضف badge إلى README:
    ```markdown
-   [![npm version](https://badge.fury.io/js/%40omdaa%2Fn8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaa/n8n-nodes-whatsapp-omdaa)
-   [![npm downloads](https://img.shields.io/npm/dm/@omdaa/n8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaa/n8n-nodes-whatsapp-omdaa)
+   [![npm version](https://badge.fury.io/js/%40omdaapi%2Fn8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaapi/n8n-nodes-whatsapp-omdaa)
+   [![npm downloads](https://img.shields.io/npm/dm/@omdaapi/n8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaapi/n8n-nodes-whatsapp-omdaa)
    ```
 
 2. ✅ أضف إلى n8n Community Nodes:
