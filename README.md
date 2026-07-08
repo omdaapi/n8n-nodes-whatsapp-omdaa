@@ -1,8 +1,8 @@
-# @omdaafreeapi/n8n-nodes-whatsapp-omdaa
+# @omdaapi/n8n-nodes-whatsapp-omdaa
 
 <div align="center">
 
-[![npm version](https://badge.fury.io/js/%40omdaafreeapi%2Fn8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaafreeapi/n8n-nodes-whatsapp-omdaa)
+[![npm version](https://badge.fury.io/js/%40omdaafreeapi%2Fn8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaapi/n8n-nodes-whatsapp-omdaa)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Free Forever](https://img.shields.io/badge/Pricing-Free%20Forever-10B981.svg)](https://omdaa.com)
 
@@ -39,13 +39,13 @@ Connect **n8n** workflows to **Omdaa** — send WhatsApp messages, manage sessio
 **Settings → Community Nodes → Install:**
 
 ```
-@omdaafreeapi/n8n-nodes-whatsapp-omdaa
+@omdaapi/n8n-nodes-whatsapp-omdaa
 ```
 
 ### Self-hosted n8n
 
 ```bash
-npm install @omdaafreeapi/n8n-nodes-whatsapp-omdaa
+npm install @omdaapi/n8n-nodes-whatsapp-omdaa
 ```
 
 Restart n8n after installation.

@@ -1,5 +1,5 @@
 {
-  "name": "@omdaafreeapi/n8n-nodes-whatsapp-omdaa",
+  "name": "@omdaapi/n8n-nodes-whatsapp-omdaa",
   "version": "1.0.0",
   "description": "n8n community node for Omdaa WhatsApp API - Send messages, manage sessions, and receive webhooks",
   "keywords": [

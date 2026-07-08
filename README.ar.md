@@ -1,8 +1,8 @@
-# @omdaafreeapi/n8n-nodes-whatsapp-omdaa
+# @omdaapi/n8n-nodes-whatsapp-omdaa
 
 <div align="center">
 
-[![npm version](https://badge.fury.io/js/%40omdaafreeapi%2Fn8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaafreeapi/n8n-nodes-whatsapp-omdaa)
+[![npm version](https://badge.fury.io/js/%40omdaafreeapi%2Fn8n-nodes-whatsapp-omdaa.svg)](https://www.npmjs.com/package/@omdaapi/n8n-nodes-whatsapp-omdaa)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![مجاني للأبد](https://img.shields.io/badge/التسعير-مجاني%20للأبد-10B981.svg)](https://omdaa.com)
 
@@ -39,13 +39,13 @@
 **Settings → Community Nodes → Install:**
 
 ```
-@omdaafreeapi/n8n-nodes-whatsapp-omdaa
+@omdaapi/n8n-nodes-whatsapp-omdaa
 ```
 
 ### n8n ذاتي الاستضافة
 
 ```bash
-npm install @omdaafreeapi/n8n-nodes-whatsapp-omdaa
+npm install @omdaapi/n8n-nodes-whatsapp-omdaa
 ```
 
 أعد تشغيل n8n بعد التثبيت.
