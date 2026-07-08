@@ -1,0 +1,78 @@
+{
+  "name": "@omdaa/n8n-nodes-whatsapp-omdaa",
+  "version": "1.0.0",
+  "description": "n8n community node for Omdaa WhatsApp API - Send messages, manage sessions, and receive webhooks",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "whatsapp",
+    "omdaa",
+    "api",
+    "messaging",
+    "webhook",
+    "automation",
+    "integration",
+    "whatsapp-business"
+  ],
+  "license": "MIT",
+  "homepage": "https://omdaa.com",
+  "author": {
+    "name": "Omdaa API",
+    "email": "support@omdaa.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdaapi/n8n-nodes-whatsapp-omdaa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omdaapi/n8n-nodes-whatsapp-omdaa/issues"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint",
+    "security:audit": "npm audit",
+    "security:fix": "npm audit fix"
+  },
+  "overrides": {
+    "form-data": "^4.0.5"
+  },
+  "files": [
+    "dist",
+    "index.js",
+    "README.md",
+    "README.ar.md",
+    "LICENSE"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/OmdaaApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Omdaa/Omdaa.node.js",
+      "dist/nodes/Omdaa/OmdaaTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-n8n-nodes-base": "^1.0.0",
+    "gulp": "^5.0.1",
+    "n8n-workflow": "^1.82.0",
+    "prettier": "^2.0.0",
+    "typescript": "~4.9.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
