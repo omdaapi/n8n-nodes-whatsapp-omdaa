@@ -3,8 +3,6 @@ import {
   INodeExecutionData,
   INodeType,
   INodeTypeDescription,
-  NodeConnectionType,
-  NodeOperationError,
 } from 'n8n-workflow';
 
 export class Omdaa implements INodeType {
@@ -19,8 +17,8 @@ export class Omdaa implements INodeType {
     defaults: {
       name: 'Omdaa',
     },
-    inputs: [NodeConnectionType.Main],
-    outputs: [NodeConnectionType.Main],
+    inputs: ['main'] as INodeTypeDescription['inputs'],
+    outputs: ['main'] as INodeTypeDescription['outputs'],
     credentials: [
       {
         name: 'omdaaApi',

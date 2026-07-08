@@ -4,7 +4,6 @@ import {
   INodeType,
   INodeTypeDescription,
   IDataObject,
-  NodeConnectionType,
   NodeOperationError,
 } from 'n8n-workflow';
 
@@ -42,7 +41,7 @@ export class OmdaaTrigger implements INodeType {
       name: 'Omdaa Trigger',
     },
     inputs: [],
-    outputs: [NodeConnectionType.Main],
+    outputs: ['main'] as INodeTypeDescription['outputs'],
     credentials: [
       {
         name: 'omdaaApi',
