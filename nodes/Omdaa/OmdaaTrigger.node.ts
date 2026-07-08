@@ -4,10 +4,30 @@ import {
   INodeType,
   INodeTypeDescription,
   IDataObject,
+  NodeConnectionType,
   NodeOperationError,
 } from 'n8n-workflow';
 
 import * as crypto from 'crypto';
+
+function verifyWebhookSignature(
+  payload: IDataObject,
+  signature: string,
+  secret: string,
+): boolean {
+  try {
+    const hmac = crypto.createHmac('sha256', secret);
+    const payloadString = JSON.stringify(payload);
+    hmac.update(payloadString);
+    const calculatedSignature = hmac.digest('hex');
+    return crypto.timingSafeEqual(
+      Buffer.from(signature),
+      Buffer.from(calculatedSignature),
+    );
+  } catch {
+    return false;
+  }
+}
 
 export class OmdaaTrigger implements INodeType {
   description: INodeTypeDescription = {
@@ -22,7 +42,7 @@ export class OmdaaTrigger implements INodeType {
       name: 'Omdaa Trigger',
     },
     inputs: [],
-    outputs: ['main'],
+    outputs: [NodeConnectionType.Main],
     credentials: [
       {
         name: 'omdaaApi',
@@ -147,7 +167,7 @@ export class OmdaaTrigger implements INodeType {
       }
 
       // Verify HMAC signature
-      const isValid = this.verifyWebhookSignature(bodyData, signature, webhookSecret);
+      const isValid = verifyWebhookSignature(bodyData, signature, webhookSecret);
       
       if (!isValid) {
         throw new NodeOperationError(this.getNode(), 'Invalid webhook signature');
@@ -172,30 +192,5 @@ export class OmdaaTrigger implements INodeType {
         ],
       ],
     };
-  }
-
-  /**
-   * Verify webhook signature using HMAC-SHA256
-   */
-  private verifyWebhookSignature(
-    payload: IDataObject,
-    signature: string,
-    secret: string,
-  ): boolean {
-    try {
-      // Create HMAC signature
-      const hmac = crypto.createHmac('sha256', secret);
-      const payloadString = JSON.stringify(payload);
-      hmac.update(payloadString);
-      const calculatedSignature = hmac.digest('hex');
-
-      // Compare signatures
-      return crypto.timingSafeEqual(
-        Buffer.from(signature),
-        Buffer.from(calculatedSignature),
-      );
-    } catch (error) {
-      return false;
-    }
   }
 }
