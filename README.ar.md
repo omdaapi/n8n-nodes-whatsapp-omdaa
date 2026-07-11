@@ -108,7 +108,7 @@ Omdaa Trigger (message.received) → Omdaa (Send Text)
 | المشروع | الرابط |
 |---------|--------|
 | SDK رسمي (5 لغات) | [github.com/omdaapi/omdaa-sdk](https://github.com/omdaapi/omdaa-sdk) |
-| Cursor MCP واتساب | [omdaa.com/mcp](https://omdaa.com/mcp) |
+| Cursor MCP واتساب | [omdaa.com/mcp](https://omdaa.com/mcp) · [Cursor Directory](https://cursor.directory/plugins/omdaa-api) |
 | مرجع API | [omdaa.com/api/v1/docs](https://omdaa.com/api/v1/docs) |
 | التوثيق | [omdaa.net](https://omdaa.net) |
 

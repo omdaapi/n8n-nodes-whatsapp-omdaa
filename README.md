@@ -116,7 +116,7 @@ Sample workflow JSON: [omdaa-sdk integrations](https://github.com/omdaapi/omdaa-
 | Project | Link |
 |---------|------|
 | Official SDK (5 languages) | [github.com/omdaapi/omdaa-sdk](https://github.com/omdaapi/omdaa-sdk) |
-| Cursor MCP WhatsApp | [omdaa.com/mcp](https://omdaa.com/mcp) |
+| Cursor MCP WhatsApp | [omdaa.com/mcp](https://omdaa.com/mcp) · [Cursor Directory](https://cursor.directory/plugins/omdaa-api) |
 | API reference | [omdaa.com/api/v1/docs](https://omdaa.com/api/v1/docs) |
 | Documentation | [omdaa.net](https://omdaa.net) |
 
